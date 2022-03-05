@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="20dp"
+        android:background="@null">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#142747"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/img_manual"
+                android:layout_width="400dp"
+                android:layout_height="170dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/manual1"/>
+
+            <TextView
+                android:id="@+id/txt_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="밀가루를 넣고 팥을 넣고 4번 뒤집어 주면 맛있게 익어요!\n 오랫동안 안뒤집으면 붕어빵이 타버리니 조심하세요!!"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_manual"
+                android:textSize="15dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/kotra_bold"/>
+
+            <ImageView
+                android:id="@+id/img_person"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_manual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/manual_person"/>
+
+            <TextView
+                android:id="@+id/txt_person_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="손님이 원하는 개수만큼 담아 드리면 완료! \n 붕어빵을 3번 태우면 GAME OVER"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_person"
+                android:textSize="15dp"
+                android:fontFamily="@font/kotra_bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="OK"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_person_manual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
